@@ -1,0 +1,41 @@
+:root {
+  --color-primary: #2465f7;
+  --color-secondary: #1e66f72a;
+  --color-background: #f8f8f8;
+  --color-warning: #e9c601;
+  --color-error: #f75e4b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+  background-color: var(--color-background);
+}
+
+#loader {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: 7px solid var(--color-primary);
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  animation: rotation 0.8s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
